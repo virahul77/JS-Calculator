@@ -49,7 +49,11 @@ button{
 
 @media (orientation: portrait) {
     .calculator {
-      height: 90vmax;
+      height: 80vmax;
       width: 80vmin;
+    }
+    .power{
+        font-size: 1rem;
+        font-weight: 400;
     }
 }

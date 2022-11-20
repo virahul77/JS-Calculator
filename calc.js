@@ -7,7 +7,7 @@ buttons.addEventListener('click',function(e){
     if(e.target.id === 'equal'){
         try{
             if(!inpStr) return;
-            display.textContent = inpStr = eval(inpStr);
+            display.textContent = inpStr = String(eval(inpStr));
         }
         catch(err){
             console.log(err);
@@ -48,7 +48,7 @@ document.addEventListener('keydown',function(e){
     if(e.key === "Enter") {
         try{
             if(!inpStr) return;
-            display.textContent = inpStr = eval(inpStr);
+            display.textContent = inpStr = String(eval(inpStr));
         }
         catch(err){
             console.log(err);
